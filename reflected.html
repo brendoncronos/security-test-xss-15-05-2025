@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><title>Reflected XSS</title></head>
+<body>
+  <p>Olá, <span id="usuario"></span></p>
+  <script>
+    const nome = new URLSearchParams(location.search).get("nome");
+    document.getElementById("usuario").innerHTML = nome;
+  </script>
+</body>
+</html>
