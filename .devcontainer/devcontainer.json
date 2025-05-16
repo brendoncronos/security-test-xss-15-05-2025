@@ -1,7 +1,0 @@
-{
-  "name": "XSS Lab",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "forwardPorts": [80]
-}
