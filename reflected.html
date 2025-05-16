@@ -9,6 +9,7 @@
   <p>Olá, <span id="usuario"></span></p>
   <script>
     const nome = new URLSearchParams(location.search).get("nome");
+    console.log(nome);
     document.getElementById("usuario").innerHTML = nome;
   </script>
 </body>
